@@ -1,101 +1,95 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/styles.css" rel="stylesheet" />
-    <link href="src/style2.css" rel="stylesheet" />
-    <title>BRAMSS</title>
-  </head>
-  <body>
-    <!-- Top Sights -->
-<section class="mt-16">
-  <div class="max-w-6xl mx-auto px-6">
 
-    <!-- Title -->
-    <h2 class="font-bold mb-8 text-lg sm:text-xl md:text-2xl lg:text-3xl">
-      Top Sights to See
-    </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="dist/styles.css" rel="stylesheet" />
+  <link href="src/style2.css" rel="stylesheet" />
+  <title>BRAMSS</title>
+</head>
 
-    <!-- Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<body>
+  <!-- Top Sights -->
+  <section class="mt-16">
+    <div class="max-w-6xl mx-auto px-6">
 
-      
-      <div class="relative md:col-span-2 h-[260px] rounded-xl overflow-hidden" >
-        <img src="dist/img/home/top sights to see/top-sight-1.webp"
-             class="w-full h-full object-cover" />
+      <h2 class="font-bold mb-8 text-lg sm:text-xl md:text-2xl lg:text-3xl">
+        Top Sights to See
+      </h2>
 
-        <!-- Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      <div class="grid gap-6">
 
-        <!-- Text -->
-        <div class="absolute top-3 left-3 flex items-center gap-2 text-white font-semibold">
-          <span>Sassnitz</span>
-          <span>🇫🇮</span>
+        <!-- Top Row (Big Cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="relative aspect-[2/1] md:aspect-[16/7] rounded-xl overflow-hidden">
+            <img src="dist/img/home/top sights to see/top-sight-1.webp" class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 text-white text-sm md:text-sm font-medium">
+              <span>Sassnitz</span>
+              <img src="dist/img/home/top sights to see/1.jpg" class="w-5 h-4 object-cover rounded-sm" />
+            </div>
+          </div>
+
+          <div class="relative aspect-[2/1] md:aspect-[16/7] rounded-xl overflow-hidden">
+            <img src="dist/img/home/top sights to see/top-sight-5.webp" class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 text-white text-sm md:text-sm font-medium">
+              <span>Binz</span>
+              <img src="dist/img/home/top sights to see/2.jpg" class="w-4 h-3 object-cover rounded-sm" />
+            </div>
+          </div>
+
         </div>
+
+        <!-- Bottom Row (Small Cards) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+
+          <div class="relative aspect-[2/1] rounded-xl overflow-hidden">
+            <img src="dist/img/home/top sights to see/top-sight-4.webp" class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 text-white text-sm md:text-sm font-medium">
+              <span>Sagard</span>
+              <img src="dist/img/home/top sights to see/3.jpg" class="w-4 h-3 object-cover rounded-sm" />
+            </div>
+          </div>
+
+          <div class="relative aspect-[2/1] rounded-xl overflow-hidden">
+            <img src="dist/img/home/top sights to see/top-sight-3.webp" class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 text-white text-sm md:text-sm font-medium">
+              <span>Bergen</span>
+              <img src="dist/img/home/top sights to see/4.jpg" class="w-4 h-3 object-cover rounded-sm" />
+            </div>
+          </div>
+
+          <div class="relative aspect-[2/1] rounded-xl overflow-hidden">
+            <img src="dist/img/home/top sights to see/top-sight-2.webp" class="w-full h-full object-cover" />
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 text-white text-sm md:text-sm font-medium">
+              <span>Freedom</span>
+              <img src="dist/img/home/top sights to see/5.jpg" class="w-4 h-3 object-cover rounded-sm" />
+            </div>
+          </div>
+
+        </div>
+
       </div>
-
-      
-      <div class="relative md:col-span-2 h-[260px] rounded-xl overflow-hidden">
-        <img src="dist/img/home/top sights to see/top-sight-5.webp"
-             class="w-full h-full object-cover" />
-
-        <!-- Gradient -->
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-        <!-- Text -->
-        <div class="absolute top-3 left-3 flex items-center gap-2 text-white font-semibold">
-          <span>Binz</span>
-          <span>🇻🇳</span>
-        </div>
-      </div>
-
-      <!-- Small Card -->
-        <div class="col-span-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-
-      
-      <div class="relative h-40 rounded-xl overflow-hidden">
-        <img src="dist/img/home/top sights to see/top-sight-4.webp"
-             class="w-full h-full object-cover" />
-
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-        <div class="absolute top-3 left-3 flex items-center gap-2 text-white text-sm font-semibold">
-          <span>Sagard</span>
-          <span>🇫🇷</span>
-        </div>
-      </div>
-
-      <!-- Small Card -->
-      <div class="relative h-40 rounded-xl overflow-hidden">
-        <img src="dist/img/home/top sights to see/top-sight-3.webp"
-             class="w-full h-full object-cover" />
-
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-        <div class="absolute top-3 left-3 flex items-center gap-2 text-white text-sm font-semibold">
-          <span>Bergen</span>
-          <span>🇬🇧</span>
-        </div>
-      </div>
-
-      <!-- Small Card -->
-      <div class="relative h-40 rounded-xl overflow-hidden">
-        <img src="dist/img/home/top sights to see/top-sight-2.webp"
-             class="w-full h-full object-cover" />
-
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-
-        <div class="absolute top-3 left-3 flex items-center gap-2 text-white text-sm font-semibold">
-          <span>Freedom</span>
-          <span>🇺🇸</span>
-        </div>
-      </div>
-        </div>
 
     </div>
+  </section>
+</body>
 
-  </div>
-</section>
-  </body>
 </html>
