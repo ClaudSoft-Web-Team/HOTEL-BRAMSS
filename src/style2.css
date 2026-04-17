@@ -4,3 +4,38 @@
   margin: 20px auto;
   background-color: red;
 }
+
+
+.cardsContainer > div {
+  width: 50%;
+}
+
+@media (min-width: 640px) {
+  .cardsContainer > div {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardsContainer > div {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardsContainer > div {
+    width: 16.66%;
+  }
+}
+
+
+.filter-btn.active {
+  background-color: #1B263B;
+  color: #FFFDF9;
+  border-color: #1B263B;
+}
+
+.filter-btn.active:hover {
+  background-color: #1B263B;
+  color: #FFFDF9;
+}
