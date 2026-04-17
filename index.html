@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 
 <head>
@@ -97,46 +98,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+=======
+<html lang="ar" dir="rtl">
+>>>>>>> f30ac33 (update3 Top things to do)
 
-    <link href="dist/styles.css" rel="stylesheet" />
-    <link href="src/style2.css" rel="stylesheet" />
-    <title>BRAMSS</title>
-  </head>
-  <body>
-    <section class="mt-16">
-  <div class="max-w-6xl mx-auto px-6">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Title -->
-<h2 class="font-bold mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#1B263B]">
+  <link href="dist/styles.css" rel="stylesheet" />
+  <link href="src/style2.css" rel="stylesheet" />
+  <title>BRAMSS</title>
+</head>
+
+<body>
+
+  <!-- Top-things-to do -->
+  <section class="mt-16">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Title -->
+      <h2 class="font-bold mb-6 text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#1B263B]">
         أماكن يمكنك زيارتها
-    </h2>
+      </h2>
 
-    <!-- Tabs -->
-    <div class="flex flex-wrap gap-3 mb-8 filter-button-group">
+      <!-- Tabs -->
+      <div class="flex flex-wrap gap-3 mb-8 filter-button-group">
+        <button data-filter="*"
+          class="filter-btn active border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+          الكل
+        </button>
 
-  <button data-filter="*"  class="filter-btn active border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+        <button data-filter=".beach"
+          class="filter-btn  border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+          <span><i class="fa-solid fa-umbrella-beach"></i></span>
+          شواطئ
+        </button>
+
+        <button data-filter=".museum"
+          class=" filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+          <span><i class="fa-solid fa-building-columns"></i></span>
+          متاحف
+        </button>
+
+        <button data-filter=".garden"
+          class="filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+          <span><i class="fa-solid fa-children"></i></span>
+          حدائق
+        </button>
+
+        <button data-filter=".food"
+          class="filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+          <span> <i class="fa-solid fa-utensils"></i></span>
+          مطاعم
+        </button>
+
+        <button data-filter=".hotel"
+          class="filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">
+          <span><i class="fa-solid fa-hotel"></i></span>
+          فنادق
+        </button>
+      </div>
+
+      <!-- Cards -->
+      <div class="cardsContainer mt-4">
+
+        <!-- beach -->
+        <div class="p-2 beach">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/beach1.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">شاطئ زالا</p>
+          </div>
+        </div>
+
+        <div class="p-2 beach">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/beach2.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">شاطئ بونتا راتا </p>
+          </div>
+        </div>
+
+        <!-- museum -->
+        <div class="p-2 museum">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/museum1.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">السيف الدمشقي</p>
+          </div>
+        </div>
+
+        <div class="p-2 museum">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/museum2.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">الجامع الأموي</p>
+          </div>
+        </div>
+
+        <!-- garden -->
+        <div class="p-2 garden">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/garden1.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">حديقة كلاسيكية</p>
+          </div>
+        </div>
+
+        <div class="p-2 garden">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/garden2.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">حديقة باجاتيل</p>
+          </div>
+        </div>
+
+        <!-- food -->
+        <div class="p-2 food">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/food1.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">مطعم راقٍ يتميز بأجواء دافئة</p>
+          </div>
+        </div>
+
+        <div class="p-2 food">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/food2.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">مطعمًا راقيًا بتصميم داخلي كلاسيكي وأنيق</p>
+          </div>
+        </div>
+
+        <!-- hotel -->
+        <div class="p-2 hotel">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/hotel1.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium"> فندق جوليا دومنا</p>
+          </div>
+        </div>
+
+        <div class="p-2 hotel">
+          <div class="group cursor-pointer transition duration-300 hover:shadow-md">
+            <img src="dist/img/home/top things to do/hotel2.jpg"
+              class="w-full aspect-[3/2] object-cover rounded-xl transition duration-300 group-hover:scale-105" />
+            <p class="mt-2 text-xs text-center font-medium">فندق تاليسمان</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- End Top-things-to do -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+  <script>
+    var $Things = $('.cardsContainer').isotope({
     
-    <!-- <span><i class="fa-solid fa-masks-theater"></i></span> -->
-    الكل
-  </button>
+      layoutMode: 'fitRows',
+      originLeft: false
+    });
 
-  
-<button data-filter=".beach"  class="filter-btn  border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40"> 
-     <span><i class="fa-solid fa-umbrella-beach"></i></span>
-    شواطئ
-  </button>
+    $('.filter-button-group').on('click', 'button', function () {
 
-  
-<button data-filter=".museum"  class=" filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">   
-    <span><i class="fa-solid fa-building-columns"></i></span>
-    متاحف
-  </button>
+      $('.filter-btn').removeClass('active');
+      $(this).addClass('active');
+      var filterValue = $(this).attr('data-filter');
+      $Things.isotope({ filter: filterValue });
+    });
 
-<button data-filter=".garden"  class="filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">   
-    <span><i class="fa-solid fa-children"></i></span>
-    حدائق
-  </button>
+  </script>
+</body>
 
+<<<<<<< HEAD
 <button data-filter=".food"  class="filter-btn border border-[#1B263B] text-[#1B263B] px-4 py-2 rounded-full text-xs hover:bg-[#E0E1DD]/40">    
    <span> <i class="fa-solid fa-utensils"></i></span>
     مطاعم
@@ -269,3 +416,6 @@ var $Things= $('.cardsContainer').isotope({
   </body>
 </html>
 >>>>>>> b5c777a (update colors system)
+=======
+</html>
+>>>>>>> f30ac33 (update3 Top things to do)
