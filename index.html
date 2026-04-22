@@ -1,13 +1,115 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/styles.css" rel="stylesheet" />
-    <link href="src/style2.css" rel="stylesheet" />
-    <title>BRAMSS</title>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold text-red-900 underline">Hello world!</h1>
-  </body>
+
+<head lang="ar" dir="rtl">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="dist/styles.css" rel="stylesheet" />
+  <link href="src/style2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <title>BRAMSS</title>
+</head>
+
+<body>
+  /*start explore tripto in motion */
+  <section class="mb-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h2 class="font-bold mt-6 mb-3 text-lg">استكشف أكثر</h2>
+
+
+      <div class="slider-container">
+
+        <div class="main-video-wrapper">
+          <video id="mainVideo" controls muted playsinline></video>
+
+          <div class="overlay-content">
+            <h3>ادخل إلى عالم من الفخامة</h3>
+            <p>انغمس في تجارب بصرية من أفضل الوجهات</p>
+            <button>استكشف جميع الفيديوهات</button>
+          </div>
+        </div>
+
+
+        <div class="slides">
+
+          <div class="slide active">
+            <video class="slide active" src="dist/img/home/explore tripto in motion/1.mp4"></video>
+
+            <div class="slide-info">
+              <p>فندق فن</p>
+              ⭐⭐⭐⭐⭐
+            </div>
+          </div>
+
+          <div class="slide">
+            <video class="slide" src="dist/img/home/explore tripto in motion/2.mp4"></video>
+
+            <div class="slide-info">
+              <p>جناح ملكي</p>
+              ⭐⭐⭐⭐
+            </div>
+          </div>
+
+          <div class="slide">
+            <video class="slide" src="dist/img/home/explore tripto in motion/3.mp4"></video>
+            <div class="slide-info">
+              <p>خدمات راقية</p>
+              ⭐⭐⭐⭐
+            </div>
+          </div>
+
+          <div class="slide">
+            <video class="slide" src="dist/img/home/explore tripto in motion/4.mp4"></video>
+
+            <div class="slide-info">
+              <p>أثاث نظيف ومرتب </p>
+              ⭐⭐⭐⭐
+            </div>
+          </div>
+
+          <div class="slide">
+            <video class="slide" src="dist/img/home/explore tripto in motion/5.mp4"></video>
+            <div class="slide-info">
+              <p>جميع أحتياجاتك متوفرة </p>
+              ⭐⭐⭐⭐
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <script>
+    const mainVideo = document.getElementById("mainVideo");
+    const slides = document.querySelectorAll(".slide");
+
+
+    mainVideo.src = slides[0].querySelector("video").src;
+
+    slides.forEach(slide => {
+      slide.addEventListener("click", () => {
+
+        const video = slide.querySelector("video");
+
+        mainVideo.src = video.src;
+        mainVideo.play();
+
+        slides.forEach(s => s.classList.remove("active"));
+        slide.classList.add("active");
+
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>
